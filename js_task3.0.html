@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body>
+
+	<button class="button" id="but1" onmouseOver="but1()" onmouseout="defaultbutton()">Button_1</button>
+	<button class="button" id="but2" onmouseOver="but2()" onmouseout="defaultbutton()">Button_2</button>
+	<button class="button" id="but3" onmouseOver="but3()" onmouseout="defaultbutton()">Button_3</button>
+	<button class="button" id="but4" onmouseOver="but4()" onmouseout="defaultbutton()">Button_4</button>
+
+<script type="text/javascript">
+	function but1(){
+		var el = document.getElementById('but1');
+		el.style.backgroundColor = "red";
+	}
+	function but2(){
+		var el = document.getElementById('but2');
+		el.style.backgroundColor = "blue";
+	}
+	function but3(){
+		var el = document.getElementById('but3');
+		el.style.backgroundColor = "green";
+	}
+	function but4(){
+		var el = document.getElementById('but4');
+		el.style.backgroundColor = "aqua";
+	}
+	function defaultbutton(){
+		var el = document.getElementsByClassName('button');
+		console.log(el);
+		for(i in el){
+			el[i].style.backgroundColor = "white";
+		}
+	}
+</script>
+</body>
+</html>

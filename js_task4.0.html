@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> strings</title>
+</head>
+<body>
+<center><h1>STRINGS in JS</h1></center>
+<h2>uppercase</h2>
+<h3>input:</h3><p id="txt0">watchdogs</p>
+<h3>output:</h3><p id="txt1"></p><hr>
+<h2>String length</h2>
+<h3>input:</h3><p id="txt0">rogerthat</p>
+<h3>output:</h3><p id="txt2"></p><hr>
+<h2>search</h2>
+<h3>input:</h3><p id="txt0">wherever u go , go with full of heart</p>
+<h3>output:</h3><p id="txt3"></p><hr>
+<h2>Index</h2>
+<h3>input:</h3><p id="txt0">live with passion</p>
+<h3>output:</h3><p id="txt4"></p><hr>
+<h2>Substring</h2>
+<h3>input:</h3><p id="txt0">play games and increase skills</p>
+<h3>output:</h3><p id="txt5"></p><hr>
+<h2>slice</h2>
+<h3>input:</h3><p id="txt0">learn from failure</p>
+<h3>output:</h3><p id="txt6"></p><hr>
+<h2>Replace</h2>
+<h3>input:</h3><p id="txt0">good,failure</p>
+<h3>output:</h3><p id="txt7"></p><hr>
+<h2>Lowercase</h2>
+<h3>input:</h3><p id="txt0">ASSASSIN</p>
+<h3>output:</h3><p id="txt8"></p><hr>
+<h2>charAt</h2>
+<h3>input:</h3><p id="txt0">Gaming life</p>
+<h3>output:</h3><p id="txt9"></p><hr>
+<h2>charcodeAt</h2>
+<h3>input:</h3><p id="txt0">value person</p>
+<h3>output:</h3><p id="txt10"></p><hr>
+<h2>Trim</h2>
+<h3>input:</h3><p id="txt0">"    hello    "</p>
+<h3>output:</h3><p id="txt11"></p><hr>
+<h2>substr</h2>
+<h3>input:</h3><p id="txt0"> leave fear ,and move on with dare</p>
+<h3>output:</h3><p id="txt12"></p><hr>
+<h2>concat</h2>
+<h3>input:</h3><p id="txt0">"always" "behappy"</p>
+<h3>output:</h3><p id="txt13"></p><hr>
+<h2>split</h2>
+<h3>input:</h3><p id="txt0">honesty is the best policy</p>
+<h3>output:</h3><p id="txt14"></p><hr>
+    <h3>output:</h3><p id="txt15"></p><hr>
+    <h3>output:</h3><p id="txt16"></p><hr>
+<script type="text/javascript">
+
+document.getElementById("txt1").innerHTML="watchdogs".toUpperCase();
+document.getElementById("txt2").innerHTML="rogerthat".length;
+document.getElementById("txt3").innerHTML="wherever u go , go with full of heart".search("u");
+document.getElementById("txt4").innerHTML="live with passion".indexOf("passion");
+document.getElementById("txt5").innerHTML="play games and increase skills".substring(7,18);
+document.getElementById("txt6").innerHTML="Learn from failure".slice(0,4);
+document.getElementById("txt7").innerHTML="good,failure".replace("good","success");
+document.getElementById("txt8").innerHTML="ASSASSIN".toLowerCase();
+document.getElementById("txt9").innerHTML="Gaming life".charAt("4");
+document.getElementById("txt10").innerHTML="value person".charCodeAt("6");
+document.getElementById("txt11").innerHTML="   hello   ".trim();
+document.getElementById("txt12").innerHTML=" leave fear ,and move on with dare".substr(5,13);
+document.getElementById("txt13").innerHTML="'always behappy'".concat("");
+document.getElementById("txt14").innerHTML="honesty is the best policy".split(" ");
+document.getElementById("txt15").innerHTML="honesty is the best policy".split("");
+document.getElementById("txt16").innerHTML="honesty is the best policy".split(" ",3);
+</script>
+</body>
+</html>
