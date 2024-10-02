@@ -3,15 +3,19 @@
     <head>
         <title>Yash</title>
         <style type="text/css">
-            
-            body {
-                font-family: Matura MT Script Capitals;
-                color: lightgoldenrodyellow;
-                background-image: url('https://cdn.wallpapersafari.com/43/3/bB9uPz.png');
-                background-position: 800% 20%;
-                background-repeat: inherit;
-                background height: inherit;
-            }
+      body {
+        font-family: Matura MT Script Capitals;
+        color: lightgoldenrodyellow;
+        background-image: url('https://cdn.wallpapersafari.com/43/3/bB9uPz.png');
+        display: flex; /* Enable Flexbox for the body */
+        align-items: center; /* Center the image vertically */
+        justify-content: center; /* Center the image horizontally (optional) */
+      }
+
+      img {
+        max-width: 100%; /* Set the maximum width to 100% */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+      }
 			div {
 			  padding: 40px;
 			  font-size: 75px;
