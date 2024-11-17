@@ -4,14 +4,35 @@
         <title>Yash</title>
         <style type="text/css">
       body {
-        font-family: Matura MT Script Capitals;
-        color: lightgoldenrodyellow;
-        background-image: url('https://cdn.wallpapersafari.com/43/3/bB9uPz.png');
-        background-repeat: no-repeat;
-        display: flex; /* Enable Flexbox for the body */
-        align-items: center; /* Center the image vertically */
-        justify-content: center; /* Center the image horizontally (optional) */
-      }
+    font-family: 'Matura MT Script Capitals', cursive;
+    color: lightgoldenrodyellow;
+    background-image: url('https://cdn.wallpapersafari.com/43/3/bB9uPz.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    display: flex; /* Enable Flexbox for the body */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Add padding to prevent content from touching the edges */
+        justify-content: flex-start; /* Align content to the top for better readability on small screens */
+        align-items: flex-start; /* Align items to the top */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
+}
+
 
       img {
         max-width: 100%; /* Set the maximum width to 100% */
